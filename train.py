@@ -1511,11 +1511,11 @@ def main(args):
             unet_lora_parameters_with_lr,
             text_lora_parameters_one_with_lr,
             text_lora_parameters_two_with_lr,
-            image_adapter_parameters_with_lr,  # ����
+            image_adapter_parameters_with_lr,  # 
         ]
     else:
         params_to_optimize = [unet_lora_parameters_with_lr,
-                              image_adapter_parameters_with_lr,] # ����
+                              image_adapter_parameters_with_lr,] # 
 
     # Optimizer creation
     if not (args.optimizer.lower() == "prodigy" or args.optimizer.lower() == "adamw"):

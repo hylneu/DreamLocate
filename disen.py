@@ -111,7 +111,6 @@ class ConditionalConv(nn.Module):
 class Image_adapter(nn.Module):
     def __init__(self, hidden_size=1024, mid_channels=128, cond_dim=128,num_attention_layers=2, num_experts=3):
         super().__init__()
-        # �������� 1024 �������� 128
         self.down_proj = nn.Conv2d(hidden_size, mid_channels, kernel_size=1, stride=1, padding=0)
         self.up_proj = nn.Conv2d(mid_channels, hidden_size, kernel_size=1, stride=1, padding=0)
 
